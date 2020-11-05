@@ -1,0 +1,13 @@
+ISim log file
+Running: E:\university\3991\fpga\homeworks\PWM_generatore\test_pwm_generator_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/university/3991/fpga/homeworks/PWM_generatore/test_pwm_generator_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# step
+Stopped at time : 10 us : File "E:/university/3991/fpga/homeworks/PWM_generatore/test_pwm_generator.v" Line 59
+# run 800000ns

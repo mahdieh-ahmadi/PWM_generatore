@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/university/3991/fpga/homeworks/PWM_generatore
+T_opt
+!s110 1604564604
+VGSm=U<7_;H1`z=^T2>4^>1
+Z1 04 18 4 work test_pwm_generator fast 0
+Z2 04 4 4 work glbl fast 0
+=1-c85b76f47ed2-5fa3b67b-33e-1c04
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;10.5;63
+R0
+T_opt1
+!s110 1604566186
+V5i8HiH7mLD^Nz;b=gSAHz2
+R1
+R2
+=1-c85b76f47ed2-5fa3bca9-347-dc4
+R3
+R4
+n@_opt1
+R5
+vglbl
+Z6 !s110 1604566185
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+INz3046GECC=X7FgQ2]FR>3
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z8 OL;L;10.5;63
+r1
+!s85 0
+31
+Z9 !s108 1604566185.000000
+!s107 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vpwm_generator
+R6
+!i10b 1
+!s100 @FU?X];RMfQAn4FmeQJbA1
+I;n5Y:g3Q0ZU<LU7m:mWWE1
+R7
+R0
+w1604565796
+8pwm_generator.v
+Fpwm_generator.v
+L0 21
+R8
+r1
+!s85 0
+31
+!s108 1604566184.000000
+!s107 pwm_generator.v|
+!s90 -reportprogress|300|pwm_generator.v|
+!i113 0
+R10
+R4
+vtest_pwm_generator
+R6
+!i10b 1
+!s100 l6^A?[XUdl?B8cfd7Dzj`1
+I2^S67:z1le?GYl7o4KC:=2
+R7
+R0
+w1604566159
+8test_pwm_generator.v
+Ftest_pwm_generator.v
+L0 25
+R8
+r1
+!s85 0
+31
+R9
+!s107 test_pwm_generator.v|
+!s90 -reportprogress|300|test_pwm_generator.v|
+!i113 0
+R10
+R4

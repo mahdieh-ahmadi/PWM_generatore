@@ -1,0 +1,401 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: pwm_generator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pwm_generator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pwm_generator"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : pwm_generator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" into library work
+Parsing module <pwm_generator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pwm_generator>.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 41: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 42: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 43: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 44: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pwm_generator>.
+    Related source file is "E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v".
+    Found 1-bit register for signal <pwm>.
+    Found 4-bit register for signal <w1>.
+    Found 4-bit register for signal <w3>.
+    Found 5-bit subtractor for signal <GND_1_o_GND_1_o_sub_7_OUT> created at line 41.
+    Found 5-bit adder for signal <n0044[4:0]> created at line 41.
+    Found 4-bit adder for signal <GND_1_o_GND_1_o_mux_15_OUT<3:0>> created at line 42.
+    Found 4-bit comparator greater for signal <w1[3]_GND_1_o_LessThan_13_o> created at line 43
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <pwm_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 3
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <pwm_generator>.
+The following registers are absorbed into counter <w1>: 1 register on signal <w1>.
+Unit <pwm_generator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 3
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pwm_generator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pwm_generator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pwm_generator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 19
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 6
+#      LUT5                        : 7
+#      LUT6                        : 2
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 9
+#      FD                          : 5
+#      FDR                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               9  out of   4800     0%  
+ Number of Slice LUTs:                   18  out of   2400     0%  
+    Number used as Logic:                18  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     18
+   Number with an unused Flip Flop:       9  out of     18    50%  
+   Number with an unused LUT:             0  out of     18     0%  
+   Number of fully used LUT-FF pairs:     9  out of     18    50%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    102     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 9     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.696ns (Maximum Frequency: 270.544MHz)
+   Minimum input arrival time before clock: 4.421ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.696ns (frequency: 270.544MHz)
+  Total number of paths / destination ports: 93 / 13
+-------------------------------------------------------------------------
+Delay:               3.696ns (Levels of Logic = 3)
+  Source:            w1_0 (FF)
+  Destination:       pwm (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: w1_0 to pwm
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.447   1.031  w1_0 (w1_0)
+     LUT4:I1->O            1   0.205   0.924  w1[3]_GND_1_o_LessThan_13_o1_SW0_SW2 (N12)
+     LUT5:I0->O            1   0.203   0.580  w1[3]_GND_1_o_LessThan_13_o1_SW0 (N8)
+     LUT5:I4->O            1   0.205   0.000  pwm_rstpot1 (pwm_rstpot)
+     FD:D                      0.102          pwm
+    ----------------------------------------
+    Total                      3.696ns (1.162ns logic, 2.534ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 25 / 5
+-------------------------------------------------------------------------
+Offset:              4.421ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       pwm (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to pwm
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   1.059  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            1   0.203   0.580  Mmux_n002841 (Mmux_n00284)
+     LUT6:I5->O            2   0.205   0.845  Mmux_n002842 (n0028<3>)
+     LUT5:I2->O            1   0.205   0.000  pwm_rstpot1 (pwm_rstpot)
+     FD:D                      0.102          pwm
+    ----------------------------------------
+    Total                      4.421ns (1.937ns logic, 2.484ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            pwm (FF)
+  Destination:       pwm (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pwm to pwm
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  pwm (pwm_OBUF)
+     OBUF:I->O                 2.571          pwm_OBUF (pwm)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.696|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.58 secs
+ 
+--> 
+
+Total memory usage is 4494080 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
