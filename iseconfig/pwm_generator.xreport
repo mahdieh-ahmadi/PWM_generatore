@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-11-05T12:13:19</DateModified>
+  <DateModified>2020-11-05T14:52:18</DateModified>
   <ModuleName>pwm_generator</ModuleName>
   <SummaryTimeStamp>2020-11-05T11:57:44</SummaryTimeStamp>
   <SavedFilePath>E:/university/3991/fpga/homeworks/PWM_generatore/iseconfig/pwm_generator.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/university/3991/fpga/homeworks/PWM_generatore</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/university/3991/fpga/homeworks/PWM_generatore\</ImplementationReportsDirectory>
   <DateInitialized>2020-11-05T10:32:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
