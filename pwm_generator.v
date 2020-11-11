@@ -26,14 +26,10 @@ module pwm_generator(
 	 output reg pwm
     );
 
-reg [3:0] w1 ;
-reg [3:0] w2 ;
-reg [3:0] w3;
-initial begin
- w1 = 0;
- w2 = 0;
- w3 = 5;
-end
+reg [3:0] w1 = 0 ;
+reg [3:0] w2 = 0 ;
+reg [3:0] w3 = 5;
+
 
 always @(posedge clk)
 begin

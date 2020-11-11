@@ -65,3 +65,7 @@ map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off pwm_generator_map.ncd pwm_generator.ncd pwm_generator.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pwm_generator.twx pwm_generator.ncd -o pwm_generator.twr pwm_generator.pcf 
 netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim pwm_generator.ngc pwm_generator_synthesis.v 
+xst -intstyle ise -ifn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.xst" -ofn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.syr" 
+xst -intstyle ise -ifn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.xst" -ofn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.syr" 
+xst -intstyle ise -ifn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.xst" -ofn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.syr" 
+xst -intstyle ise -ifn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.xst" -ofn "E:/university/3991/fpga/homeworks/PWM_generatore/pwm_generator.syr" 

@@ -85,7 +85,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1604566175" xil_pn:in_ck="-3687587713616034021" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1604566175">
+    <transform xil_pn:end_ts="1604907509" xil_pn:in_ck="-3687587713616034021" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1604907509">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="pwm_generator.v"/>
@@ -103,13 +103,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1604566175" xil_pn:in_ck="-3687587713616034021" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1604566175">
+    <transform xil_pn:end_ts="1604907509" xil_pn:in_ck="-3687587713616034021" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1604907509">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="pwm_generator.v"/>
       <outfile xil_pn:name="test_pwm_generator.v"/>
     </transform>
-    <transform xil_pn:end_ts="1604566176" xil_pn:in_ck="-3687587713616034021" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="8499606024003363967" xil_pn:start_ts="1604566175">
+    <transform xil_pn:end_ts="1604907510" xil_pn:in_ck="-3687587713616034021" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="8499606024003363967" xil_pn:start_ts="1604907509">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -146,12 +146,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1604565809" xil_pn:in_ck="1959309837782258270" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8101942135897177054" xil_pn:start_ts="1604565800">
+    <transform xil_pn:end_ts="1604906141" xil_pn:in_ck="1959309837782258270" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8101942135897177054" xil_pn:start_ts="1604906131">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="pwm_generator.lso"/>
       <outfile xil_pn:name="pwm_generator.ngc"/>
@@ -171,7 +169,9 @@
     <transform xil_pn:end_ts="1604565815" xil_pn:in_ck="-6133899205428736640" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3448314085840988155" xil_pn:start_ts="1604565809">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -182,6 +182,7 @@
     <transform xil_pn:end_ts="1604565824" xil_pn:in_ck="-6133899205428736639" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1604565815">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="pwm_generator.pcf"/>
       <outfile xil_pn:name="pwm_generator_map.map"/>
@@ -195,6 +196,7 @@
     <transform xil_pn:end_ts="1604565837" xil_pn:in_ck="6071915606013130010" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-5189723633469429705" xil_pn:start_ts="1604565824">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="pwm_generator.ncd"/>
       <outfile xil_pn:name="pwm_generator.pad"/>
@@ -209,6 +211,7 @@
     <transform xil_pn:end_ts="1604565837" xil_pn:in_ck="-6133899205428736771" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1604565832">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="pwm_generator.twr"/>
       <outfile xil_pn:name="pwm_generator.twx"/>
@@ -216,6 +219,8 @@
     <transform xil_pn:end_ts="1604565849" xil_pn:in_ck="-6133899205428736640" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="2963598788002450151" xil_pn:start_ts="1604565846">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/pwm_generator_synthesis.nlf"/>
       <outfile xil_pn:name="netgen/synthesis/pwm_generator_synthesis.v"/>

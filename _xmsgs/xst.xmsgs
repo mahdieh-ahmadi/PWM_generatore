@@ -5,16 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 41: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 37: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 42: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 38: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 43: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 44: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\university\3991\fpga\homeworks\PWM_generatore\pwm_generator.v" Line 40: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
 </messages>

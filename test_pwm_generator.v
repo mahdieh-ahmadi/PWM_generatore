@@ -55,50 +55,53 @@ module test_pwm_generator;
 		// Add stimulus here
 		@(negedge clk) increase_duty = 1;
 		@(negedge clk) increase_duty = 0;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
+		#80000
+		
 		@(negedge clk) increase_duty = 1;
 		@(negedge clk) increase_duty = 0;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
+		#80000
+		
 		@(negedge clk) reset = 1;
 		@(negedge clk) reset = 0;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
+		#80000
+		
 		@(negedge clk) decrease_duty = 1;
 		@(negedge clk) decrease_duty = 0;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
-		@(negedge clk) ;
+		#80000
+		
 		@(negedge clk) decrease_duty = 1;
 		@(negedge clk) decrease_duty = 0;
+		#80000
+		
+		
+		@(negedge clk) decrease_duty = 1;
+		@(negedge clk) decrease_duty = 0;
+		#80000
+		
+		
+		@(negedge clk) decrease_duty = 1;
+		@(negedge clk) decrease_duty = 0;
+		#80000
+		
+		
+		@(negedge clk) decrease_duty = 1;
+		@(negedge clk) decrease_duty = 0;
+		#80000
+		
+		
+		@(negedge clk) decrease_duty = 1;
+		@(negedge clk) decrease_duty = 0;
+		#50000
+		
+		
+		@(negedge clk) reset = 1;
+		@(negedge clk) reset = 0;
+	
+
 
 	end
 	
-	always #10000 clk = ~clk;
+	always #5000 clk <= ~clk;
       
 endmodule
 

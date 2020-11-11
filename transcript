@@ -15,47 +15,48 @@
 # do {test_pwm_generator.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 12:19:44 on Nov 05,2020
+# Start time: 11:08:39 on Nov 09,2020
 # vlog -reportprogress 300 pwm_generator.v 
 # -- Compiling module pwm_generator
 # 
 # Top level modules:
 # 	pwm_generator
-# End time: 12:19:45 on Nov 05,2020, Elapsed time: 0:00:01
+# End time: 11:08:39 on Nov 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 12:19:45 on Nov 05,2020
+# Start time: 11:08:39 on Nov 09,2020
 # vlog -reportprogress 300 test_pwm_generator.v 
 # -- Compiling module test_pwm_generator
 # 
 # Top level modules:
 # 	test_pwm_generator
-# End time: 12:19:45 on Nov 05,2020, Elapsed time: 0:00:00
+# End time: 11:08:39 on Nov 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 12:19:45 on Nov 05,2020
+# Start time: 11:08:39 on Nov 09,2020
 # vlog -reportprogress 300 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 12:19:45 on Nov 05,2020, Elapsed time: 0:00:00
+# End time: 11:08:40 on Nov 09,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.test_pwm_generator glbl 
-# Start time: 12:19:45 on Nov 05,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 11:08:40 on Nov 09,2020
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading work.test_pwm_generator(fast)
 # Loading work.pwm_generator(fast)
 # Loading work.glbl(fast)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: mahdie  Hostname: DESKTOP-RBQDBFC  ProcessID: 7172
-#           Attempting to use alternate WLF file "./wlftt6mmen".
+#           Attempting to use alternate WLF file "./wlftq5b6dc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftt6mmen
+#           Using alternate file: ./wlftq5b6dc
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 run
-run
-# End time: 14:44:58 on Nov 05,2020, Elapsed time: 2:25:13
+# End time: 11:11:47 on Nov 09,2020, Elapsed time: 0:03:07
+# Errors: 0, Warnings: 2
+
 # Errors: 0, Warnings: 2
